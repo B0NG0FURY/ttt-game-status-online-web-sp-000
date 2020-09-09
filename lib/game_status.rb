@@ -13,6 +13,8 @@ def won?(board)
     pos3 = win_arrays[2]
     if board[pos1] == "X" && board[pos2] == "X" && board[pos3] == "X" || board[pos1] == "O" && board[pos2] == "O" && board[pos3] == "O"
       return true
+    else
+      return false
     end
   end
 end
