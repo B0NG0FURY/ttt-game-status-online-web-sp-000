@@ -8,8 +8,11 @@ WIN_COMBINATIONS = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5
 
 def won?(board)
   WIN_COMBINATIONS.each do |win_arrays|
-    win_arrays.each do |win_indexes|
-      
+    pos1 = win_arrays[0]
+    pos2 = win_arrays[1]
+    pos3 = win_arrays[2]
+    if (board[pos1] == "X" && board[pos2] == "X" && board[pos3] == "X") || (board[pos1] == "O" && board[pos2] == "O" && board[pos3] == "O")
+      true
     end
   end
 end
