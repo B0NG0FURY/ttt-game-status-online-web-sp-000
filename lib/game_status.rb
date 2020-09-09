@@ -40,3 +40,9 @@ def over?(board)
     true
   end
 end
+
+def winner(board)
+  winner_index = won?(board)
+  winner_is = winner_index[0]
+  return winner_is
+end
