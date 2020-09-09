@@ -20,7 +20,7 @@ end
 
 def full?(board)
   board.each do |i|
-    if board[i] !== "X" || board[i] !== "O"
+    if board[i] != "X" || board[i] != "O"
       false
     end
     true
