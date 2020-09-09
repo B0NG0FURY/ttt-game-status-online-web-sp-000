@@ -23,5 +23,6 @@ def full?(board)
     if board[i] != "X" || board[i] != "O"
       false
     end
-    true
+  end
+  true
 end
