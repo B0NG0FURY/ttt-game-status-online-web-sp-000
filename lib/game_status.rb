@@ -20,9 +20,9 @@ end
 
 def full?(board)
   board.each do |i|
-    if i != "X" || i != "O"
-     return false
+    if i != "X" && i != "O"
+     false
     end
   end
-  return true
+  true
 end
